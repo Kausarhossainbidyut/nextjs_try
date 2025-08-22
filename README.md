@@ -1,5 +1,7 @@
 # Next.js Job Task / My Shop
 
+![My Shop Screenshot](https://i.ibb.co/nhhdTrJ/My-shop.jpg)
+
 ## 🔹 Short Project Description
 This is a **Next.js + NextAuth + MongoDB** project for a shopping platform.  
 It features:
