@@ -3,7 +3,9 @@ import Link from "next/link";
 import { useSession, signOut } from "next-auth/react";
 
 export default function Navbar() {
-  const { data: session } = useSession();
+  const { data: session, status } = useSession();
+
+  if (status === "loading") return null;
 
   return (
     <nav className="flex justify-between items-center p-4 bg-gray-800 text-white sticky top-0 z-50">
@@ -11,7 +13,7 @@ export default function Navbar() {
       <div className="flex gap-4">
         <Link href="/">Home</Link>
         <Link href="/products">Products</Link>
-        <Link href="/dashboard/add-product">Add Product</Link>
+
         {session ? (
           <>
             <Link href="/dashboard/add-product">Add Product</Link>
