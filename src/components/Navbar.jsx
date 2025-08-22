@@ -11,6 +11,7 @@ export default function Navbar() {
       <div className="flex gap-4">
         <Link href="/">Home</Link>
         <Link href="/products">Products</Link>
+        <Link href="/dashboard/add-product">Add Product</Link>
         {session ? (
           <>
             <Link href="/dashboard/add-product">Add Product</Link>
