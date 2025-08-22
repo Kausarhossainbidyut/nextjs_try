@@ -11,7 +11,7 @@ export default function ProductPage() {
       try {
         const res = await fetch("/api/products");
         const data = await res.json();
-        console.log("GET /api/products:", data);
+        // console.log("GET /api/products:", data);
 
         if (Array.isArray(data)) {
           setProducts(data);
